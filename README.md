@@ -21,11 +21,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Developer of this APP
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+My name is Theodor Abi-Mansour [website](https://www.tedzy.com/) and I've been developping on the web for more than 10 years; i've been introduced to Laravel around 2 years back only and working on that framework has been one of the best things to do in my life.
 
 ## Laravel Sponsors
 
