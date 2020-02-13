@@ -56,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <img src="{{ asset('img/user1-128x128.jpg') }}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Brad Diesel
@@ -72,7 +72,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="{{ asset('img/user8-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     John Pierce
@@ -88,7 +88,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="{{ asset('img/user3-128x128.jpg') }}" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Nora Silvester
@@ -167,7 +167,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
                         <router-link to="/admin/dashboard" class="nav-link">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-tachometer-alt text-info"></i>
                             <p>
                                 Dashboard
                                 <span class="right badge badge-danger">New</span>
@@ -177,7 +177,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                     <li class="nav-item has-treeview">
                         <router-link to="/admin/management" class="nav-link">
-                            <i class="nav-icon fas fa-cogs"></i>
+                            <i class="nav-icon fas fa-cogs text-success"></i>
                             <p>
                                 Management
                                 <i class="right fas fa-angle-left"></i>
@@ -185,7 +185,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </router-link>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <router-link to="/admin/users" class="nav-link">
+                                <router-link to="/users" class="nav-link">
                                     <i class="fab fa-500px nav-icon"></i>
                                     <p>Users</p>
                                 </router-link>
@@ -201,12 +201,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                     <li class="nav-item">
                         <router-link to="/admin/profile" class="nav-link">
-                            <i class="nav-icon fas fa-user"></i>
+                            <i class="nav-icon fas fa-user text-orange"></i>
                             <p>
                                 Profile
                             </p>
                         </router-link>
                     </li>
+
+                    <hr>
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}"
@@ -235,6 +237,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="content">
             <div class="container-fluid">
                 <router-view></router-view>
+                <!-- set progressbar -->
+                <vue-progress-bar></vue-progress-bar>
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->

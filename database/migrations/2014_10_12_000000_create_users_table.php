@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('google_id')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->integer('type')->default('0');
             $table->string('password');
             $table->mediumText('bio')->nullable();
             $table->string('photo')->default('profile.png');
